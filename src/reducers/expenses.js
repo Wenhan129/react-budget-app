@@ -19,7 +19,7 @@ export default (state = expenseReducerDefaultState, action) => {
                     console.log(action.amount);
                     return {
                         ...expense,
-                        amount: action.amount
+                        ...action.updates
                     };
                 } else
                     return expense;

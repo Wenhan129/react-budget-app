@@ -6,9 +6,9 @@ import configureStore from './store/configureStore.js';
 import { addExpense } from "./actions/expenses";
 import { setTextFilter, setStartDate, setEndDate } from "./actions/filters";
 import getVisibleExpenses from "./selectors/expenses"
-import ExpenseList from "./components/ExpenseList"
 import './styles/styles.scss'
 import 'normalize.css/normalize.css'
+import './firebase/firebase'
 
 
 
@@ -22,7 +22,7 @@ store.subscribe(() => {
 store.dispatch(addExpense({ description: "Water bill", amount: 100.11, createdAt: 120 }));
 store.dispatch(addExpense({ description: "Gas bill", amount: 200, createdAt: 180 }));
 store.dispatch(addExpense({ description: "Electricity bill", amount: 290, createdAt: 100 }));
-
+import './firebase/firebase'
 
 
 

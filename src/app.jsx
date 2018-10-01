@@ -5,10 +5,12 @@ import AppRouter from "./routers/AppRouter";
 import configureStore from './store/configureStore.js';
 import { addExpense } from "./actions/expenses";
 import { setTextFilter, setStartDate, setEndDate } from "./actions/filters";
-import getVisibleExpenses from "./selectors/expenses"
-import './styles/styles.scss'
-import 'normalize.css/normalize.css'
-import './firebase/firebase'
+import getVisibleExpenses from "./selectors/expenses";
+import './styles/styles.scss';
+import 'normalize.css/normalize.css';
+import './firebase/firebase';
+import "react-dates/lib/css/_datepicker.css";
+
 
 
 
